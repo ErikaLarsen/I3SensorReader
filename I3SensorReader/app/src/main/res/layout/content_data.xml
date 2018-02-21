@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.erika.i3sensorreader.DataActivity"
+    tools:showIn="@layout/activity_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/viterbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/cci"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_column="0"
+            android:text="Sensor 1"
+            style="@style/TextStyle"/>
+
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:id="@+id/data_layout"
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignBounds"
+                android:columnCount="3"
+                android:layout_marginLeft="35dp"
+                android:paddingBottom="100dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="8dp">
+
+
+
+                <ImageView
+                    android:id="@+id/sound_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/speaker"
+                    />
+                <TextView
+                    android:id="@+id/sound"
+                    android:layout_column="1"
+                    android:text="sound: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/sound_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+
+
+                <ImageView
+                    android:id="@+id/temperature_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/temp"
+                    />
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_column="1"
+                    android:text="temperature: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/temperature_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/vibration_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/vibration"
+                    />
+                <TextView
+                    android:id="@+id/vibration"
+                    android:layout_column="1"
+                    android:text="vibration: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/vibration_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/light_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/light"
+                    />
+                <TextView
+                    android:id="@+id/light"
+                    android:layout_column="1"
+                    android:text="light: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/light_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"/>
+
+
+                <ImageView
+                    android:id="@+id/humidity_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/humidity"
+                    />
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_column="1"
+                    android:text="humidity: "
+                    style="@style/DataTextStyle"/>
+                <TextView
+                    android:id="@+id/humidity_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/gas_mq5_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/gas"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq5"
+                    android:layout_column="1"
+                    android:text="gas mq5: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq5_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+                <ImageView
+                    android:id="@+id/gas_mq3_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/gas"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq3"
+                    android:layout_column="1"
+                    android:text="gas mq3: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq3_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/gas_mq2_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/gas"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq2"
+                    android:layout_column="1"
+                    android:text="gas mq2: "
+                    style="@style/DataTextStyle"/>
+                <TextView
+                    android:id="@+id/gas_mq2_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/gas_mq9_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/gas"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq9"
+                    android:layout_column="1"
+                    android:text="gas mq9: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/gas_mq9_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/temp_int_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/internal"
+                    />
+                <TextView
+                    android:id="@+id/temperature_interior"
+                    android:layout_column="1"
+                    android:text="temperature interior: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/temperature_interior_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/pir_icon"
+                    android:layout_column="0"
+                    style="@style/DataImageStyle"
+                    android:src="@drawable/proximity"
+                    />
+                <TextView
+                    android:id="@+id/pir"
+                    android:layout_column="1"
+                    android:text="pir: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/pir_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/id_icon"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_column="1"
+                    android:text="id: "
+                    style="@style/DataTextStyle"
+                    />
+                <TextView
+                    android:id="@+id/id_data"
+                    android:layout_column="2"
+                    android:text="waiting for data"
+                    style="@style/DataTextStyle"
+                    />
+
+
+
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
